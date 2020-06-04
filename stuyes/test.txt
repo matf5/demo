@@ -1,0 +1,13 @@
+$ib inline-block
+$borderColor lightgreen
+div
+  p
+    border 1px solid $borderColor
+  color darkkhaki
+  .a-b
+    background-color lightyellow
+    [data]
+      padding 15px
+      font-size 12px
+.d-ib
+  display $ib

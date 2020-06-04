@@ -1,0 +1,23 @@
+.block {
+  margin-top: 40px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .block:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid red;
+    transform-origin: left bottom;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    /* box-sizing要设置为border-box，否则伪元素上下左右各会多1px */
+    box-sizing: border-box;
+    /* 设置圆角border等 */
+    border-radius: 10px;
+  }
+}
