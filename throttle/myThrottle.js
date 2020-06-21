@@ -3,7 +3,7 @@ function Throttle(func, wait = 10, opt = {}) {
   let previous = 0;
   const { leading = true, trailing = true } = opt;
   const later = function() {
-    previous = !lesading ? 0 : Date.now();
+    previous = !leading ? 0 : Date.now();
     timeout = null;
     result = func.apply(context, args);
   }
