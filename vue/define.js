@@ -1,5 +1,5 @@
 const a= {
-    'b': 1
+    b: 1
 };
 let tmp = a.b;
 function defineLog(obj, key) {
